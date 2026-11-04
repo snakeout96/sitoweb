@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Scopri come viaggiano i dati su Internet: client, server, DNS e protocolli.">
+  <title>Dentro la Rete — Come funziona Internet</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="internet">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Dentro la Rete, homepage"><span class="brand-mark">DR<span>•</span></span><span>Dentro la Rete</span></a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="index.html">Home</a>
+      <a class="active" href="internet.html" aria-current="page">Come funziona Internet</a>
+      <a href="sicurezza.html">Sicurezza</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-shell">
+      <div class="page-hero-copy">
+        <p class="eyebrow">01 / IL VIAGGIO DEI DATI</p>
+        <h1>Come funziona <span>Internet?</span></h1>
+        <p class="hero-lead">Dietro una semplice richiesta del browser si nasconde una conversazione tra computer, server e router, regolata da protocolli condivisi.</p>
+        <a class="button button-primary" href="#passaggi">Segui il percorso <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="page-hero-images">
+        <img class="page-art" src="assets/pacchetti.svg" alt="Illustrazione di pacchetti di dati che viaggiano tra nodi di rete">
+        <img class="page-photo" src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1000&q=85" alt="Dettaglio di una scheda elettronica" loading="lazy">
+      </div>
+    </section>
+
+    <section class="content-section page-shell" id="passaggi">
+      <div class="section-heading section-heading-left">
+        <p class="eyebrow">DAL BROWSER AL SERVER</p>
+        <h2>Una richiesta, più passaggi</h2>
+        <p>Quando digiti un indirizzo, il dispositivo deve individuare il server corretto e poi scambiare con esso i dati necessari.</p>
+      </div>
+      <div class="steps-list">
+        <article class="step-row">
+          <span class="step-index">01</span>
+          <div><h3>Il nome diventa un indirizzo</h3><p>Il DNS (Domain Name System) associa un nome, come <strong>esempio.it</strong>, a un indirizzo IP che identifica il server nella rete.</p></div>
+          <span class="step-tag">DNS</span>
+        </article>
+        <article class="step-row">
+          <span class="step-index">02</span>
+          <div><h3>La richiesta raggiunge il server</h3><p>Il browser invia una richiesta usando un protocollo applicativo, per esempio HTTP o la sua versione protetta HTTPS.</p></div>
+          <span class="step-tag">HTTP(S)</span>
+        </article>
+        <article class="step-row">
+          <span class="step-index">03</span>
+          <div><h3>I dati viaggiano in pacchetti</h3><p>Le informazioni vengono suddivise in unità più piccole. I pacchetti attraversano la rete e possono seguire percorsi differenti.</p></div>
+          <span class="step-tag">IP</span>
+        </article>
+        <article class="step-row">
+          <span class="step-index">04</span>
+          <div><h3>Il browser ricostruisce la pagina</h3><p>Il server risponde e il browser interpreta HTML, CSS, JavaScript e le altre risorse per mostrare il contenuto.</p></div>
+          <span class="step-tag">WEB</span>
+        </article>
+      </div>
+    </section>
+
+    <section class="dark-callout page-shell">
+      <div><p class="eyebrow">IL CONCETTO CHIAVE</p><h2>Internet è un'infrastruttura condivisa.</h2></div>
+      <p>Non esiste un unico computer che contiene tutta la rete: sistemi autonomi e dispositivi diversi comunicano grazie a standard e protocolli comuni.</p>
+    </section>
+
+    <section class="fact-strip page-shell">
+      <div><p class="eyebrow">METTI ALLA PROVA LA CURIOSITÀ</p><h2>Un altro dettaglio da ricordare.</h2><p class="fact-text" data-fact-box aria-live="polite">Premi il pulsante per scoprire un fatto sul Web.</p></div>
+      <button class="button button-dark" type="button" data-fact-button>Mostra un fatto <span aria-hidden="true">＋</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">DR<span>•</span></span><span>Dentro la Rete</span></a><p>Un piccolo viaggio nel funzionamento di Internet.</p><span>© <span data-year>2026</span></span></footer>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Concetti essenziali di sicurezza informatica per navigare con consapevolezza.">
+  <title>Dentro la Rete — Sicurezza digitale</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body data-page="sicurezza">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Dentro la Rete, homepage"><span class="brand-mark">DR<span>•</span></span><span>Dentro la Rete</span></a>
+    <nav class="main-nav" aria-label="Navigazione principale">
+      <a href="index.html">Home</a>
+      <a href="internet.html">Come funziona Internet</a>
+      <a class="active" href="sicurezza.html" aria-current="page">Sicurezza</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="page-hero page-shell">
+      <div class="page-hero-copy">
+        <p class="eyebrow">02 / SICUREZZA DIGITALE</p>
+        <h1>Navigare con <span>consapevolezza.</span></h1>
+        <p class="hero-lead">La sicurezza informatica non dipende da un singolo strumento: nasce dall'unione di tecnologie, attenzione e comportamenti corretti.</p>
+        <a class="button button-primary" href="#principi">Scopri i principi <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="page-hero-images">
+        <img class="page-art" src="assets/scudo.svg" alt="Illustrazione originale di uno scudo che rappresenta la sicurezza digitale">
+        <img class="page-photo" src="https://images.unsplash.com/photo-1550751827-4bd374c3f58b?auto=format&fit=crop&w=1000&q=85" alt="Immagine astratta di tecnologia e sicurezza informatica" loading="lazy">
+      </div>
+    </section>
+
+    <section class="content-section page-shell" id="principi">
+      <div class="section-heading section-heading-left">
+        <p class="eyebrow">TRE PRINCIPI UTILI</p>
+        <h2>La protezione comincia dalle basi</h2>
+        <p>Questi concetti ricorrono spesso quando si parla di protezione delle comunicazioni e delle informazioni personali.</p>
+      </div>
+      <div class="security-grid">
+        <article class="security-card"><span class="security-symbol">01</span><h3>Crittografia</h3><p>Trasforma un'informazione leggibile in una forma non comprensibile senza la chiave appropriata. HTTPS usa protocolli crittografici per proteggere la comunicazione con un sito.</p></article>
+        <article class="security-card"><span class="security-symbol">02</span><h3>Autenticazione</h3><p>Serve a verificare l'identità di chi accede a un servizio. Una password robusta e l'autenticazione a più fattori rendono l'accesso più difficile da compromettere.</p></article>
+        <article class="security-card"><span class="security-symbol">03</span><h3>Aggiornamenti</h3><p>Gli aggiornamenti correggono errori e vulnerabilità. Mantenere aggiornati sistema operativo, browser e applicazioni riduce i rischi evitabili.</p></article>
+      </div>
+    </section>
+
+    <section class="check-section page-shell">
+      <div><p class="eyebrow">PRIMA DI CLICCARE</p><h2>Fermati un secondo e controlla.</h2><p>Un messaggio urgente o un link inatteso merita attenzione. Verifica il mittente e raggiungi i servizi digitando direttamente il loro indirizzo, invece di seguire collegamenti sospetti.</p></div>
+      <div class="check-list"><p><span>✓</span> Controlla il dominio del sito.</p><p><span>✓</span> Non condividere codici di accesso.</p><p><span>✓</span> Usa password diverse per servizi diversi.</p></div>
+    </section>
+
+    <section class="fact-strip page-shell">
+      <div><p class="eyebrow">METTI ALLA PROVA LA CURIOSITÀ</p><h2>La sicurezza è anche un'abitudine.</h2><p class="fact-text" data-fact-box aria-live="polite">Premi il pulsante per scoprire un fatto sulla sicurezza digitale.</p></div>
+      <button class="button button-dark" type="button" data-fact-button>Mostra un fatto <span aria-hidden="true">＋</span></button>
+    </section>
+  </main>
+
+  <footer class="site-footer"><a class="brand brand-footer" href="index.html"><span class="brand-mark">DR<span>•</span></span><span>Dentro la Rete</span></a><p>Un piccolo viaggio nel funzionamento di Internet.</p><span>© <span data-year>2026</span></span></footer>
+</body>
+</html>
