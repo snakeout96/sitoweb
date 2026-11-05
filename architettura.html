@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Architettura DNS</title>
+
+</head>
+<body onload="benvenuto()">
+<div class="pagina" id="pagina">
+
+<div class="menu" id="menu" onmouseover="document.querySelector('#link').style.display = 'block'" onmouseleave="document.querySelector('#link').style.display = 'none'">
+<ul>
+<li><a href="index.html" onmouseover="testoLink('Torna alla pagina iniziale')">Home</a></li>
+<li><a href="architettura.html" onmouseover="testoLink('Host, default name server e local resolver')">Architettura</a></li>
+<li><a href="record.html" onmouseover="testoLink('Resource Record: A, MX, CNAME, RRset')">Record</a></li>
+<li><a href="feedback.html" onmouseover="testoLink('Lascia un commento')">Feedback</a></li>
+</ul>
+</div>
+
+<h1>Come si usa il DNS</h1>
+
+<div id="messaggio" class="avviso"></div>
+<div id="link" style="display:none;" class="avviso">Link:</div>
+
+<div class="coppia">
+<img src="img/architettura-dns.svg" alt="Host, default name server e Internet">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/DNS_Flow_Chat.jpg?width=400" alt="Diagramma di flusso DNS (Wikimedia Commons)">
+</div>
+
+<h2>Il default name server</h2>
+<ol>
+<li>Ogni host è configurato con l'indirizzo IP del proprio <b>default name server</b> (IP-DNS):
+deve essere noto a priori, altrimenti sarebbe impossibile contattarlo.</li>
+<li>Ogni host contatta <b>sempre e solo</b> il proprio default name server (o evenutalmente il local resolver).</li>
+<li>La ricerca dell'informazione la fa il default name server, non l'host.</li>
+<li>Il default name server fa sia da server (ascolta i client) sia da client (interroga altri name server).</li>
+</ol>
+
+<h3>Due casi tipici</h3>
+<table>
+<tr>
+<td><b>Caso 1</b></td>
+<td>aziende e università</td>
+<td>Name server interno all'organizzazione. Il traffico DNS verso l'esterno è permesso solo a quel name server
+(per prestazioni, con la cache, e per cybersecurity: si blocca la risoluzione dei nomi legati ad attacchi)</td>
+</tr>
+<tr>
+<td><b>Caso 2</b></td>
+<td>Internet provider</td>
+<td>Name server interno, ma il traffico DNS uscente è permesso a qualsiasi nodo: chi vuole configura il proprio host con un name
+server esterno, ad esempio <mark>8.8.8.8</mark> (Google public DNS)</td>
+</tr>
+</table>
+
+<h2>Approfondimento</h2>
+<iframe src="https://bartolialberto.github.io/ComputerNetworks/2%20-%20DNS/Approfondimenti/" width="800" height="350"></iframe>
+
+</div>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</body>
+</html>

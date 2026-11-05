@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Feedback</title>
+
+</head>
+<body onload="benvenuto()">
+<div class="pagina" id="pagina">
+
+<div class="menu" id="menu" onmouseover="document.querySelector('#link').style.display = 'block'" onmouseleave="document.querySelector('#link').style.display = 'none'">
+<ul>
+<li><a href="index.html" onmouseover="testoLink('Torna alla pagina iniziale')">Home</a></li>
+<li><a href="architettura.html" onmouseover="testoLink('Host, default name server e local resolver')">Architettura</a></li>
+<li><a href="record.html" onmouseover="testoLink('Resource Record: A, MX, CNAME, RRset')">Record</a></li>
+<li><a href="feedback.html" onmouseover="testoLink('Lascia un commento')">Feedback</a></li>
+</ul>
+</div>
+
+<h1 style="color:green">Mandaci un feedback</h1>
+
+<div id="messaggio" class="avviso"></div>
+<div id="link" style="display:none;" class="avviso">Link:</div>
+
+<h2>Form</h2>
+<form>
+Nome:<br>
+<input type="text" id="nome">
+
+<br>
+
+Cognome<br>
+<input type="text" id="cognome">
+
+<br>
+
+Il tuo feedback<br>
+<textarea id="testo" rows="5"></textarea>
+
+<br>
+<button type="button" onclick="mostraFeedback()" style="width: 100%;">Invia</button>
+<input type="reset"></input>
+</form>
+
+<div class="coppia">
+<img src="img/computer.png"></img>
+<img src="https://thumb.wikimedia.org/wikipedia/commons/thumb/8/8d/Application_Server.svg/960px-Application_Server.svg.png?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail" alt="Architettura del DNS (Wikimedia Commons)"></img>
+</div>
+
+<p id="freccia" style="display:none; text-align:center;">---------------------></p>
+<textarea id="risultato" style="display:none; margin: 0 auto;" readonly rows="10" cols="60"></textarea>
+
+</div>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</body>
+</html>

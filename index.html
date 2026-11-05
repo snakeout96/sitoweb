@@ -1,0 +1,92 @@
+<html>
+<head>
+<title>Il DNS</title>
+</head>
+<body onload="benvenuto()">
+<div class="pagina" id="pagina">
+
+<div class="menu" id="menu" onmouseover="document.querySelector('#link').style.display = 'block'" onmouseleave="document.querySelector('#link').style.display = 'none'">
+<ul>
+<li><a href="index.html" onmouseover="testoLink('Torna alla pagina iniziale')">Home</a></li>
+<li><a href="architettura.html" onmouseover="testoLink('Host, default name server e local resolver')">Architettura</a></li>
+<li><a href="record.html" onmouseover="testoLink('Resource Record: A, MX, CNAME, RRset')">Record</a></li>
+<li><a href="feedback.html" onmouseover="testoLink('Lascia un commento')">Feedback</a></li>
+</ul>
+</div>
+
+<h1 style="color:green">Il DNS</h1>
+
+<div id="messaggio" class="avviso"></div>
+<div id="link" style="display:none;" class="avviso">Link:</div>
+
+
+<p>Quando scrivi <b>www.units.it</b> nel browser, devo prima risolvere questo nome in un <i>indirizzo IP</i> per poter aprire una connessione TCP con il server web che lo gestisce. Se ne occupa il <strong>DNS</strong> (<em>Domain Name System</em>),
+un'infrastruttura distribuita in tutto il mondo.
+<div class="coppia">
+<img src="img/logo-dns.svg"></img>
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/DNS_Architecture.svg?width=700" alt="Architettura del DNS (Wikimedia Commons)"></img>
+</div>
+
+<h2>Un esempio pratico</h2>
+<table>
+<tr>
+<th>Nome di un host</th>
+<th>Indirizzo IP</th>
+</tr>
+<tr>
+<td>mail.virgilio.it</td>
+<td>192.113.21.27</td>
+</tr>
+<tr>
+<td>www.microsoft.com</td>
+<td>115.116.123.11</td>
+</tr>
+</table>
+<ul>
+<li><del>Usare gli indirizzi IP a mano</del> -> usare <mark>i nomi</mark>, tradotti dal DNS</li>
+<li>Gli indirizzi IP possono cambiare nel tempo</li>
+<li>Possono dipendere dalla posizione geografica del client</li>
+</ul>
+
+<h2>Eventi storici</h2>
+<table>
+<tr>
+<th>Data</th>
+<th>Evento</th>
+</tr>
+<tr>
+<td>1985</td>
+<td>Jon Postel manteneva un unico <b>host file</b> (nome -> indirizzo IP). Ogni nodo ne teneva una copia,
+e ogni modifica andava comunicata a Postel e poi ricopiata in tutti i nodi</td>
+</tr>
+<tr>
+<td>Novembre 1987</td>
+<td>Nascono il DNS vero e proprio: <b>RFC 1034</b> e <b>RFC 1035</b> (ideatore: <a href="https://it.wikipedia.org/wiki/Paul_Mockapetris">Paul Mockapetris</a>)</td>
+</tr>
+</table>
+<p>Il nuovo sistema doveva rispettare quattro requisiti:</p>
+<ol>
+<li><b>Scala</b>: centinaia di milioni di righe, usate da miliardi di host</li>
+<li><b>Performance</b>: accesso rapidissimo, anche per le risposte NXDOMAIN</li>
+<li><b>Fault-tolerance</b>: nessun single point of failure</li>
+<li><b>Autonomia amministrativa</b>: ogni organizzazione gestisce i propri dati</li>
+</ol>
+
+
+
+<h3>Curiosità</h3>
+<div class="attenzione">
+<p><mark onclick="mostraCuriosita()">Clicca qui per una curiosità</mark></p>
+<p><b onclick="mostraNascondi('nota')">Mostra / nascondi una nota</b></p>
+<div id="nota" style="display:none">
+<p>La parola "DNS" ha più significati: l'intera infrastruttura, un singolo name server o protocollo.</p>
+</div>
+</div>
+
+</div>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 340" width="600" height="340">
+  <rect width="600" height="340" fill="#f7fafc"/>
+  <text x="300" y="32" font-family="Arial" font-size="20" font-weight="bold" text-anchor="middle" fill="#1f4e79">Ogni riga e' un Resource Record (RR)</text>
+  <rect x="30" y="55" width="540" height="40" fill="#1f4e79"/>
+  <text x="50" y="81" font-family="Arial" font-size="17" font-weight="bold" fill="#fff">NAME</text>
+  <text x="270" y="81" font-family="Arial" font-size="17" font-weight="bold" fill="#fff">TYPE</text>
+  <text x="380" y="81" font-family="Arial" font-size="17" font-weight="bold" fill="#fff">VALUE</text>
+  <g font-family="Courier New" font-size="15" fill="#222">
+    <rect x="30" y="95" width="540" height="42" fill="#ffffff" stroke="#b0b8c0"/>
+    <text x="50" y="121">mail.virgilio.it</text><text x="270" y="121">A</text><text x="380" y="121">192.113.21.27</text>
+    <rect x="30" y="137" width="540" height="42" fill="#eaf3fb" stroke="#b0b8c0"/>
+    <text x="50" y="163">ftp.cs.cornell.edu</text><text x="270" y="163">A</text><text x="380" y="163">115.116.123.11</text>
+    <rect x="30" y="179" width="540" height="42" fill="#ffffff" stroke="#b0b8c0"/>
+    <text x="50" y="205">units.it</text><text x="270" y="205">MX</text><text x="380" y="205">mx.units.it</text>
+    <rect x="30" y="221" width="540" height="42" fill="#eaf3fb" stroke="#b0b8c0"/>
+    <text x="50" y="247">tiscali.it</text><text x="270" y="247">MX</text><text x="380" y="247">smtp-in.tiscali.it</text>
+  </g>
+  <text x="300" y="305" font-family="Arial" font-size="14" text-anchor="middle" fill="#444">La tabella ha tre colonne: nome, tipo e valore</text>
+</svg>

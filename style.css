@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #dde1e6;
+  line-height: 1.5;
+}
+
+.pagina {
+  width: 900px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: white;
+}
+
+h1 { 
+  color: #1f4e79; 
+  border-bottom: 3px solid #1f4e79; 
+  padding-bottom: 6px; 
+}
+
+h2 { 
+  color: #2e75b6; 
+  margin-top: 30px; 
+
+}
+h3 { 
+  color: #2e75b6; 
+}
+
+h4, h5, h6 { 
+  color: #444444;
+}
+
+.menu ul { 
+  padding: 0; 
+  margin: 0; 
+}
+
+.menu li { 
+  display: inline; 
+  margin-right: 6px; 
+}
+
+.menu a {
+  background-color: #1f4e79;
+  color: #ffffff;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+.menu a:hover { 
+  background-color: #2e75b6; 
+}
+
+.avviso {
+  background-color: #eaf3fb;
+  border: 1px solid #2e75b6;
+  padding: 8px 12px;
+  margin: 10px 0;
+}
+
+.attenzione {
+  background-color: #fff6dd;
+  border: 1px solid #e0a800;
+  padding: 8px 12px;
+  margin: 10px 0;
+}
+
+.codice {
+  background-color: #222222;
+  color: #7CFC9A;
+  font-family: "Courier New", monospace;
+  padding: 10px;
+  margin: 10px;
+}
+
+.coppia { 
+  text-align: center; 
+  margin: 15px 0; 
+}
+
+.coppia img {
+  height: 230px;
+  border: 1px solid #b0b8c0;
+  padding: 4px;
+  margin: 0 8px;
+  background-color: #ffffff;
+}
+
+table { 
+  width: 100%;
+}
+
+th { 
+  background-color: #1f4e79; 
+  color: #ffffff; 
+  padding: 8px;
+}
+
+td { 
+  border: 1px solid #b0b8c0; 
+  padding: 8px; 
+}
+
+small { 
+  color: gray; 
+}
+
+textarea {
+  resize: none;
+}
+
+form {
+  width: 250px;
+  margin: 0 auto;
+}
+
+form input, form textarea {
+  width: 100%;
+}

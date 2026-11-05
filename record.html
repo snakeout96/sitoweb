@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+<title>Resource Record del DNS</title>
+
+</head>
+<body onload="benvenuto()">
+<div class="pagina" id="pagina">
+
+<div class="menu" id="menu" onmouseover="document.querySelector('#link').style.display = 'block'" onmouseleave="document.querySelector('#link').style.display = 'none'">
+<ul>
+<li><a href="index.html" onmouseover="testoLink('Torna alla pagina iniziale')">Home</a></li>
+<li><a href="architettura.html" onmouseover="testoLink('Host, default name server e local resolver')">Architettura</a></li>
+<li><a href="record.html" onmouseover="testoLink('Resource Record: A, MX, CNAME, RRset')">Record</a></li>
+<li><a href="feedback.html" onmouseover="testoLink('Lascia un commento')">Feedback</a></li>
+</ul>
+</div>
+
+<h1>I Resource Record</h1>
+
+<div id="messaggio" class="avviso"></div>
+<div id="link" style="display:none;" class="avviso">Link:</div>
+
+
+<p>I name server contengono una tabella con tre colonne: <b>NOME</b>, <b>TYPE</b>, <b>VALORE</b>.
+Ogni riga si chiama <strong>Resource Record</strong> (<em>RR</em>).</p>
+
+<div class="coppia">
+<img src="img/rr-tabella.svg" alt="Tabella dei Resource Record">
+<img src="https://commons.wikimedia.org/wiki/Special:FilePath/Dns_dig.png?width=500" alt="Esempio di comando dig (Wikimedia Commons)">
+</div>
+
+<h2>Request e response</h2>
+<p>Nel nostro schema intuitivo la <b>request</b> è un RR incompleto (nome e type con un punto interrogativo)
+e la <b>response</b> è l'RR completo:</p>
+<div class="codice">www.units.it A ?</div>
+<div class="codice">www.units.it A IP<sub>1</sub></div>
+<p>La response può anche dire che l'RR non esiste: nel gergo DNS si chiama <mark>NXDOMAIN</mark>
+(<i>no such domain</i>, anche se in realtà dovrebbe essere «no such RR»).</p>
+
+<h2>I principali type</h2>
+<table>
+<tr>
+<th>Type</th>
+<th>Nome</th>
+<th>Valore</th>
+<th>Esempio</th>
+</tr>
+<tr>
+<td><b>A</b></td>
+<td>nome di un host</td>
+<td>indirizzo IP</td>
+<td>mail.virgilio.it → 192.113.21.27</td>
+</tr>
+<tr>
+<td><b>MX</b></td>
+<td>nome di un dominio di email</td>
+<td>nome dell'host mail server</td>
+<td>units.it → mx.units.it</td>
+</tr>
+<tr>
+<td><b>CNAME</b></td>
+<td>nome di un host</td>
+<td>nome equivalente</td>
+<td>sitoweb.com → snakeout96.github.io</td>
+</tr>
+</table>
+
+</div>
+
+<link rel="stylesheet" href="style.css">
+<script src="script.js"></script>
+</body>
+</html>
