@@ -30,7 +30,7 @@ function mostraFeedback() {
     alert("Compila tutti i campi prima di inviare");
   } 
   else {
-    var risultato = "POST /\nHost: snakeout96.github.io/sitoweb\nContent-Type: application/x-www-form-urlencoded\nContent-Length:\n...\n<LV>\n" + "nome=" + nome + "?cognome=" + cognome + "?testo=" + testo.replaceAll(" ", "+");
+    var risultato = "POST /\nHost: snakeout96.github.io\nReferer: https://snakeout96.github.io/sitoweb/feedback.html\nContent-Type: application/x-www-form-urlencoded\nContent-Length:\n...\n<LV>\n" + "nome=" + nome + "&cognome=" + cognome + "&testo=" + testo.replaceAll(" ", "+");
 
     document.getElementById("risultato").innerHTML = risultato;
     document.getElementById("risultato").style.display = "block";
