@@ -11,7 +11,7 @@
 <ul>
 <li><a href="index.html" onmouseover="testoLink('Torna alla pagina iniziale')">Home</a></li>
 <li><a href="architettura.html" onmouseover="testoLink('Host, default name server e local resolver')">Architettura</a></li>
-<li><a href="record.html" onmouseover="testoLink('Resource Record: A, MX, CNAME, RRset')">Record</a></li>
+<li><a href="record.html" onmouseover="testoLink('Resource Record: A, MX, CNAME')">Record</a></li>
 <li><a href="feedback.html" onmouseover="testoLink('Lascia un commento')">Feedback</a></li>
 </ul>
 </div>
@@ -30,7 +30,7 @@
 <ol>
 <li>Ogni host è configurato con l'indirizzo IP del proprio <b>default name server</b> (IP-DNS):
 deve essere noto a priori, altrimenti sarebbe impossibile contattarlo.</li>
-<li>Ogni host contatta <b>sempre e solo</b> il proprio default name server (o evenutalmente il local resolver).</li>
+<li>Ogni host contatta <b>sempre e solo</b> il proprio default name server (o evenutalmente inizia prima la ricerca nel local resolver se la configurazione lo prevede).</li>
 <li>La ricerca dell'informazione la fa il default name server, non l'host.</li>
 <li>Il default name server fa sia da server (ascolta i client) sia da client (interroga altri name server).</li>
 </ol>
@@ -39,9 +39,9 @@ deve essere noto a priori, altrimenti sarebbe impossibile contattarlo.</li>
 <table>
 <tr>
 <td><b>Caso 1</b></td>
-<td>aziende e università</td>
+<td>aziende e università (tipicamente)</td>
 <td>Name server interno all'organizzazione. Il traffico DNS verso l'esterno è permesso solo a quel name server
-(per prestazioni, con la cache, e per cybersecurity: si blocca la risoluzione dei nomi legati ad <a href="https://www.akamai.com/it/glossary/what-is-dns-tunneling">attacchi</a>)</td>
+(per prestazioni (cache) e per una questione di sicurezza: si blocca la risoluzione dei nomi legati ad <a href="https://www.akamai.com/it/glossary/what-is-dns-tunneling">attacchi</a>)</td>
 </tr>
 <tr>
 <td><b>Caso 2</b></td>

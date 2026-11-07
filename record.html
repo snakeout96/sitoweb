@@ -11,7 +11,7 @@
 <ul>
 <li><a href="index.html" onmouseover="testoLink('Torna alla pagina iniziale')">Home</a></li>
 <li><a href="architettura.html" onmouseover="testoLink('Host, default name server e local resolver')">Architettura</a></li>
-<li><a href="record.html" onmouseover="testoLink('Resource Record: A, MX, CNAME, RRset')">Record</a></li>
+<li><a href="record.html" onmouseover="testoLink('Resource Record: A, MX, CNAME')">Record</a></li>
 <li><a href="feedback.html" onmouseover="testoLink('Lascia un commento')">Feedback</a></li>
 </ul>
 </div>
@@ -36,7 +36,7 @@ e la <b>response</b> è l'RR completo:</p>
 <div class="codice">www.units.it A ?</div>
 <div class="codice">www.units.it A IP<sub>1</sub></div>
 <p>La response può anche dire che l'RR non esiste: nel gergo DNS si chiama <mark>NXDOMAIN</mark>
-(<i>no such domain</i>, anche se in realtà dovrebbe essere «no such RR»).</p>
+(<i>no such domain</i>, anche se in realtà dovrebbe essere "no such RR").</p>
 
 <h2>I principali type</h2>
 <table>
@@ -50,19 +50,19 @@ e la <b>response</b> è l'RR completo:</p>
 <td><b>A</b></td>
 <td>nome di un host</td>
 <td>indirizzo IP</td>
-<td>mail.virgilio.it → 192.113.21.27</td>
+<td>mail.google.com -> 192.113.21.27</td>
 </tr>
 <tr>
 <td><b>MX</b></td>
 <td>nome di un dominio di email</td>
 <td>nome dell'host mail server</td>
-<td>units.it → mx.units.it</td>
+<td>units.it -> mx.units.it</td>
 </tr>
 <tr>
 <td><b>CNAME</b></td>
 <td>nome di un host</td>
 <td>nome equivalente</td>
-<td>sitoweb.com → snakeout96.github.io</td>
+<td>sitoweb.com -> snakeout96.github.io</td>
 </tr>
 </table>
 
