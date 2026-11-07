@@ -18,7 +18,7 @@ function mostraNascondi(id) {
 }
 
 function mostraCuriosita() {
-  alert("Curiosità: il DNS funziona da più di 40 anni anche se il carico \u00e8 cresciuto di 6-7 ordini di grandezza");
+  alert("Curiosità: il DNS funziona da più di 40 anni anche se il carico è cresciuto di 6-7 ordini di grandezza");
 }
 
 function mostraFeedback() {
